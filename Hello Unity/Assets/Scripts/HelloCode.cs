@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class HelloCode : MonoBehaviour
 {
+    public int[] students;                 //배열 을 할당을 꼭 해줘야만함
+    public float[] Heights;
+    public bool[] flags;
+    public string[] strings;
+    public GameObject[] gameObjects;
+
     void Start()
     {
-        for(int i = 1; i < 10; i++)         //9단
+
+        for(int i = 0; i < students.Length; i++)
         {
-            for (int j = 1; j < 10; j++)        //9단 총 81회 진행
-            {
-                int temp = i * j;                               //임의의 변수를 생성하여 i곱하기 j값을 넣어준다.   
-                Debug.Log(i + " x " + j + " = " + temp);
-            }
+            students[i] = Random.Range(50, 100); //50이상 100미만 사이의 값을 리턴해주는 랜덤 함수
         }
+
+        for(int i = 0; i < students.Length; i++)
+        {
+            Debug.Log(i.ToString() + " 번의 학생의 점수 : " + students[i]);
+        }
+
     }
 }
