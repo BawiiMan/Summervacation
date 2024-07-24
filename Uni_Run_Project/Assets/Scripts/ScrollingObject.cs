@@ -11,6 +11,9 @@ public class ScrollingObject : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);             //초당 speed 속도로 왼쪽으로 평행이동
+        if (!GameManager.Instance.isGameOver)        //게임 오버가 아니라면
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);             //초당 speed 속도로 왼쪽으로 평행이동
+        }
     }
 }

@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Die");                     //애니메이터의 Die 트리거를 셋팅
         playerRigidbody.velocity = Vector2.zero;        //속도를 제로로 변경
         isDead = true;                                  //사망 상태를 true로 변경
+
+        //게임 매니저의 게임 오버 처리 실행
+        GameManager.Instance.OnPlayerDead();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
