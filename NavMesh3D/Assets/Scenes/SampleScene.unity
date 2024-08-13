@@ -123,6 +123,55 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &42534925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42534927}
+  - component: {fileID: 42534926}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &42534926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42534925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b2c20e565d2b0448a3eea84290e231e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Surface: {fileID: 342477283}
+  Player: {fileID: 918277854}
+  UpdateRate: 0.1
+  MovementThredshold: 3
+  NavMeshSize: {x: 20, y: 20, z: 20}
+--- !u!4 &42534927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42534925}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138038354
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +431,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: af02bb84155c29a4da19f119ab5b3753, type: 2}
+  m_NavMeshData: {fileID: 0}
   m_BuildHeightMesh: 0
 --- !u!64 &342477284
 MeshCollider:
@@ -775,6 +824,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 17.73}
+--- !u!1 &918277854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2207448258387463750, guid: 3b647a04930900642b77cd7c73be04f6, type: 3}
+  m_PrefabInstance: {fileID: 6256712427859244306}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &920510005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,3 +1471,4 @@ SceneRoots:
   - {fileID: 2017586279}
   - {fileID: 917077821}
   - {fileID: 1781221825}
+  - {fileID: 42534927}
